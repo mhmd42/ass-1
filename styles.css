@@ -1,0 +1,52 @@
+h1 {
+    text-align: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+
+nav {
+    text-align: middle;
+}
+
+#gallery {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+#gallery img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 10px;
+}
+
+#resources article {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#resources .links {
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#resources .announcements {
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+
+#welcome {
+    text-align: center;
+}
+
