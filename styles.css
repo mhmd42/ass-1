@@ -1,4 +1,21 @@
 /* Header Design */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #fff5f6;
+    font-family: 'Arial', sans-serif;
+}
+
 header {
     background-color: #ff9eaa;
     display: flex;
@@ -32,24 +49,29 @@ nav a:hover {
     background-color: #ff8396;
 }
 
-body {
-    background-color: #fff5f6;
-    font-family: 'Arial', sans-serif;
-}
-
 section {
-    padding: 30px 30px 30px 30px;
-    margin: 0px 0px 0px 0px;
+    padding: 30px;
+    margin: 0px;
+    margin: 20px 0;
+    background-color:azure;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 article {
     padding: 2rem;
     background-image: url(https://img.freepik.com/free-vector/cute-rainbow-frame-vector-beige-background-cute-hand-drawn-style_53876-126111.jpg?ga=GA1.1.396103154.1728141386&semt=ais_hybrid);
+    box-sizing: border-box;
+    max-width: 100%;
 }
 
-#welcome h2 {
+h2 {
+    text-align: center;
     color: #ff6b6b;
     font-family: 'Comic Sans MS', cursive;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 #welcome figure img {
@@ -169,24 +191,40 @@ tbody tr:hover {
 }
 
 #resources article {
+    text-align: center;
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-#resources .links {
+#resources .links, #resources .announcements {
     width: 50%;
     padding: 10px;
     box-sizing: border-box;
 }
 
-#resources .announcements {
-    width: 50%;
-    padding: 10px;
-    box-sizing: border-box;
-    
-}
-
-#welcome {
+footer{
     text-align: center;
+    font-family: 'Comic Sans MS', cursive;
+    font-size: larger;
 }
+
+@media (max-width: 600px){
+    body{
+        font-size: 14px;
+    };
+
+}
+
+@media (min-width: 601px) and (max-width: 900px){
+    body{
+        font-size: 16px;
+    };
+}
+
+@media (min-width: 901px){
+    body{
+        font-size: 18px;
+    };
+}
+
