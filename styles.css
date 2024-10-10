@@ -1,4 +1,21 @@
 /* Header Design */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #fff5f6;
+    font-family: 'Arial', sans-serif;
+}
+
 header {
     background-color: #ff9eaa;
     display: flex;
@@ -32,30 +49,66 @@ nav a:hover {
     background-color: #ff8396;
 }
 
-body {
-    background-color: #fff5f6;
-    font-family: 'Arial', sans-serif;
-}
-
 section {
-    padding: 30px 30px 30px 30px;
-    margin: 0px 0px 0px 0px;
+    padding: 30px;
+    margin: 0px;
+    margin: 20px 0;
+    background-color:azure;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 article {
     padding: 2rem;
     background-image: url(https://img.freepik.com/free-vector/cute-rainbow-frame-vector-beige-background-cute-hand-drawn-style_53876-126111.jpg?ga=GA1.1.396103154.1728141386&semt=ais_hybrid);
+    box-sizing: border-box;
+    max-width: 100%;
 }
 
-#welcome h2 {
+h2 {
+    text-align: center;
     color: #ff6b6b;
     font-family: 'Comic Sans MS', cursive;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 #welcome figure img {
     border-radius: 20px;
     max-width: 100%;
     height: auto;
+}
+
+#welcome figcaption {
+    font-size: larger;
+    font-weight: 900;
+    color: #ff6b6b;
+    background-color: #fff5f6;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+
+#schedule {
+    width: 100%;
+}
+
+#schedule table{
+    width:100%;
+    border-collapse: collapse;
+    overflow-x: auto;
+    table-layout: auto;
+    white-space: normal;
+}
+
+#schedule td, #schedule th {
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #ddd;
 }
 
 #gallery {
@@ -78,11 +131,18 @@ article {
     gap: 1rem;
 }
 
+
+#teacher img{
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
 #teacher h2 {
     width: 100%;
     color: #ff6b6b;
-    text-align: left;
+    text-align: center;
     margin-bottom: 1rem;
+
 }
 
 
@@ -93,27 +153,59 @@ article {
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Comic Sans MS', cursive;
+    font-size: larger;
+    text-align:center;
+    
 }
 
+#teacher figcaption{
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 20px;
+    margin-top: 10px;
+    font-size: larger;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.748);
+    text-decoration-line: underline;
+}
+
+
 #resources article {
+    text-align: center;
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-#resources .links {
+#resources .links, #resources .announcements {
     width: 50%;
     padding: 10px;
     box-sizing: border-box;
 }
 
-#resources .announcements {
-    width: 50%;
-    padding: 10px;
-    box-sizing: border-box;
-    
-}
-
-#welcome {
+footer{
     text-align: center;
+    font-family: 'Comic Sans MS', cursive;
+    font-size: larger;
 }
+
+@media (max-width: 600px){
+    body{
+        font-size: 14px;
+    };
+
+}
+
+@media (min-width: 601px) and (max-width: 900px){
+    body{
+        font-size: 16px;
+    };
+}
+
+@media (min-width: 901px){
+    body{
+        font-size: 18px;
+    };
+}
+
