@@ -205,8 +205,34 @@ tbody tr:hover {
 
 footer{
     text-align: center;
+    padding: 20px;
     font-family: 'Comic Sans MS', cursive;
     font-size: larger;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+footer ul li a{
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+footer ul li a i {
+    margin-right: 8px;
+    font-size: 1.2rem;
 }
 
 @media (max-width: 600px){
