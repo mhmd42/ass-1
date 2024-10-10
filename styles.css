@@ -64,6 +64,34 @@ article {
     color: #ff6b6b;
 }
 
+table {
+    overflow-x: auto;
+    width: 100%;
+    border-style: solid;
+    border-width: medium;
+    border-color: black;
+    border-collapse: collapse;
+    font-size: 25px;
+    text-align: center;
+}
+
+thead td, thead th {
+    background-color: #ffc7c7;
+    padding: 10px;
+    border-bottom: solid black;
+}
+
+tbody td {
+    padding: 10px;
+}
+
+tbody tr {
+    padding: 10px;
+}
+
+tbody tr:hover {
+    background-color: orange
+}
 
 #gallery {
     display: flex;
@@ -79,31 +107,62 @@ article {
     border: 2px solid black;
 }
 
+#teacher {
+    background-color: #fff5f6;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 30px 0;
+}
+
 #teacher article {
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
-    gap: 1rem;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
 }
 
 #teacher h2 {
     width: 100%;
     color: #ff6b6b;
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 2rem;
     text-align: left;
-    margin-bottom: 1rem;
+    margin-bottom: 30px;
 }
 
 
 #teacher .info {
-    flex: auto;
+    flex: 50%;
     min-width: 300px;
     padding: 1rem;
     background-color: #fff;
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
 }
 
-#teacher figcaption{
-    font-size: larger;
+#teacher .info p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+#teacher figure {
+    flex-basis: 25%;
+    text-align: center;
+}
+
+#teacher figure img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+#teacher figcaption {
+    font-size: 1.2 rem;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.748);
     text-decoration-line: underline;
