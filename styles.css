@@ -36,17 +36,29 @@ nav ul {
     justify-content: center;
     gap: 2rem;
     padding: 0;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 nav a {
-    color: #fff;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: #FF6B6B;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
     font-weight: bold;
-    border-radius: 15px;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav a:hover {
-    background-color: #ff8396;
+    background-color: #FF6B6B;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 section {
@@ -81,38 +93,40 @@ h2 {
 }
 
 #welcome figcaption {
+    font-family: 'Comic Sans MS', cursive;
+    background-color:#fff;
+    border-radius: 20px;
+    margin-top: 10px;
+    text-align: center;
     font-size: larger;
     font-weight: 900;
     color: #ff6b6b;
 }
 
-table {
-    overflow-x: auto;
+#schedule{
+    font-family: 'Comic Sans MS', cursive; 
+}
+
+.schedule-table {
     width: 100%;
-    border-style: solid;
-    border-width: medium;
-    border-color: black;
+    min-width: 800px;
     border-collapse: collapse;
-    font-size: 25px;
     text-align: center;
 }
 
-thead td, thead th {
+.schedule-table th,
+.schedule-table td {
+    padding: 0.75rem;
+    border: 1px solid #e0e0e0;
+}
+
+.schedule-table thead th {
     background-color: #ffc7c7;
-    padding: 10px;
-    border-bottom: solid black;
+    -webkit-text-fill-color: #fff;
 }
 
-tbody td {
-    padding: 10px;
-}
-
-tbody tr {
-    padding: 10px;
-}
-
-tbody tr:hover {
-    background-color: orange
+.schedule-table tbody tr:hover {
+    background-color: orange;
 }
 
 #gallery {
@@ -130,7 +144,6 @@ tbody tr:hover {
 }
 
 #teacher {
-    background-color: #fff5f6;
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

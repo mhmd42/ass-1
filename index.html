@@ -40,103 +40,89 @@
             </article>
         </section>
         <!-- Weekly Schedule -->
-        <section>
+        <section id="schedule">
             <article>
                 <h2>Weekly Schedule</h2>
-                <table id="schedule">
-                    <thead data-theme="light">
-                        <tr>
-                            <td></td>
-                            <th>7:00 AM</th>
-                            <td>8:00 AM</td>
-                            <td>9:00 AM</td>
-                            <td>10:00 AM</td>
-                            <td>11:00 AM</td>
-                            <td>12:00 AM</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                        <td data-theme="light">Sunday</td>
-                        <td>Activity</td>
-                        <td>Activity</td>
-                        <td>Activity</td>
-                        <td>Activity</td>
-                        <td>Activity</td>
-                        <td>Activity</td>
-                        </tr>
-                        <tr>
-                            <td data-theme="light">Monday</td>
-                            <td>Activity</td>
-                            <td>Activity</td>
-                            <td>Activity</td>
-                            <td>Activity</td>
-                            <td>Activity</td>
-                            <td>Activity</td>
-                        </tr>
-                        <tr>
-                            <td data-theme="light">Tuesday</td>
-                            <td>Activity</td>
-                            <td>Activity</td>
-                            <td>Activity</td>
-                            <td>Activity</td>
-                            <td>Activity</td>
-                            <td>Activity</td>
-                        </tr>
-                        <tr>
-                            <td data-theme="light">Wednesday</td>
-                            <td>Activity</td>
-                            <td>Activity</td>
-                            <td>Activity</td>
-                            <td>Activity</td>
-                            <td>Activity</td>
-                            <td>Activity</td>
-                        </tr>
-                        <tr>
-                            <td data-theme="light">Thursday</td>
-                            <td>Activity</td>
-                            <td>Activity</td>
-                            <td>Activity</td>
-                            <td>Activity</td>
-                            <td>Activity</td>
-                            <td>Activity</td>
-                        </tr>
-                        <tr>
-                            <td data-theme="light">Friday</td>
-                            <td>Activity</td>
-                            <td>Activity</td>
-                            <td>Activity</td>
-                            <td>Activity</td>
-                            <td>Activity</td>
-                            <td>Activity</td>
-                        </tr>
-                        <tr>
-                            <td data-theme="light">Saturday</td>
-                            <td>Activity</td>
-                            <td>Activity</td>
-                            <td>Activity</td>
-                            <td>Activity</td>
-                            <td>Activity</td>
-                            <td>Activity</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </article>
-        </section>
-        <!-- Photo Gallery of class activities -->
-        <section>
-            <article>
-                <h2>Gallery</h2>
-                <figure id="gallery">
-                    <img src="https://sparketh.com/wp-content/uploads/2021/03/Kid-art-lessons.jpg" alt="pic1" style="height: 400px; width: 300px;">
-                    <img src="https://goodparentingbrighterchildren.com/wp-content/uploads/2019/03/Children-drawing-PB-1024x710.jpg" alt="pic2" style="height: 400px; width: 300px;">
-                    <img src="https://abclearningcenterfl.com/wp-content/uploads/2015/01/Childrens-Artwork-300x206.jpg" alt="pic3" style="height: 400px; width: 300px;">
-                    <img src="https://media.istockphoto.com/id/856679760/vector/wax-crayon-like-childs-hand-drawn-house-grass-colorful-flowers-and-sun.jpg?s=612x612&w=0&k=20&c=rF16DSl_muUTAdkB3TjaLsBBWxQwJUaAvu2sI6WfqLg=" alt="pic4" style="height: 400px; width: 300px;">
-                    <img src="https://media.istockphoto.com/id/853281564/vector/wax-crayon-like-kids-hand-drawn-colorful-flowers-with-green-grass.jpg?s=612x612&w=0&k=20&c=Bx83b3wMFY90DFcgxr4tYll6gax6UNRCJWqQdFYqZ9s=" alt="pic5" style="height: 400px; width: 300px;">
-                    <img src="https://media.istockphoto.com/id/1418114591/vector/child-drawing-of-a-cat-on-a-walk-pencil-art-in-childish-style.jpg?s=612x612&w=0&k=20&c=oL98qD87iqbpHcPqAZkWqqo36klTC6gMRYiy0Uj5cAk=" alt="pic6" style="height: 400px; width: 300px;">
-                    <img src="https://media.istockphoto.com/id/1135209328/vector/hand-drawn-rainbow.jpg?s=612x612&w=0&k=20&c=y9LggKglmX867GLjVGe2Vozvl2NCCDpPNFO5JLW4EDs=" alt="pic7" style="height: 400px; width: 300px;">
-                    <img src="https://media.istockphoto.com/id/1368887626/photo/childs-drawing-spacecraft-in-space.jpg?s=612x612&w=0&k=20&c=SjXwc-VdVo7Ie14GvFQQedoBhLCbpWY9SU5BeWGCvmY=" alt="pic8" style="height: 400px; width: 300px;">
-                </figure>
+                <div style="overflow-x: auto;">
+                    <table class="schedule-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Time/Day</th>
+                                <th scope="col">7:00 AM</th>
+                                <th scope="col">8:00 AM</th>
+                                <th scope="col">9:00 AM</th>
+                                <th scope="col">10:00 AM</th>
+                                <th scope="col">11:00 AM</th>
+                                <th scope="col">12:00 PM</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row" style="background-color: #ffc7c7; -webkit-text-fill-color: #fff;">Sunday</th>
+                                <td>Arrival & Free Play</td>
+                                <td>Morning Circle</td>
+                                <td>Arts & Crafts</td>
+                                <td>Snack Time</td>
+                                <td>Outdoor Play</td>
+                                <td>Story Time</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" style="background-color: #ffc7c7; -webkit-text-fill-color: #fff;">Monday</th>
+                                <td>Welcome Time</td>
+                                <td>Math Games</td>
+                                <td>Music & Dance</td>
+                                <td>Healthy Snack</td>
+                                <td>Nature Walk</td>
+                                <td>Show & Tell</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" style="background-color: #ffc7c7; -webkit-text-fill-color: #fff;">Tuesday</th>
+                                <td>Early Reading</td>
+                                <td>Science Fun</td>
+                                <td>Physical Exercise</td>
+                                <td>Snack Break</td>
+                                <td>Building Blocks</td>
+                                <td>Puppet Show</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" style="background-color: #ffc7c7; -webkit-text-fill-color: #fff;">Wednesday</th>
+                                <td>Morning Games</td>
+                                <td>ABC Learning</td>
+                                <td>Art Workshop</td>
+                                <td>Fruit Time</td>
+                                <td>Garden Activity</td>
+                                <td>Music Time</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" style="background-color: #ffc7c7; -webkit-text-fill-color: #fff;">Thursday</th>
+                                <td>Quiet Reading</td>
+                                <td>Numbers Fun</td>
+                                <td>Creative Play</td>
+                                <td>Snack Social</td>
+                                <td>Sports Games</td>
+                                <td>Dance Party</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" style="background-color: #ffc7c7; -webkit-text-fill-color: #fff;">Friday</th>
+                                <td>Free Choice</td>
+                                <td>Story Writing</td>
+                                <td>Painting Time</td>
+                                <td>Healthy Snack</td>
+                                <td>Group Games</td>
+                                <td>Weekly Celebration</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" style="background-color: #ffc7c7; -webkit-text-fill-color: #fff;">Saturday</th>
+                                <td>Weekend Club</td>
+                                <td>Special Activities</td>
+                                <td>Fun Projects</td>
+                                <td>Snack Time</td>
+                                <td>Play Time</td>
+                                <td>Family Time</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </article>
         </section>
         <!-- Parent resources or announcements -->
@@ -145,16 +131,20 @@
                 <div class="links">
                     <h2>Links</h2>
                     
-                        <p><a href="#">Link 1</a><br></p>
-                        <p><a href="#">Link 2</a><br></p>
-                        <p><a href="#">Link 3</a><br></p>
+                    <p><a href="#">Parent Portal Login</a><br></p>
+                    <p><a href="#">Monthly Meal Plan</a><br></p>
+                    <p><a href="#">Activity Calendar</a><br></p>
+                    <p><a href="#">Health & Safety Guidelines</a><br></p>
+                    <p><a href="#">Parent Handbook</a><br></p>
                     
                 </div>
                 <div class="announcements">
                     <h2>Announcements</h2>
-                    <p>Important announcement 1</p>
-                    <p>Important announcement 2</p>
-                    <p>Important announcement 3</p>
+                    <p>🎨 Art Exhibition Next Thursday - Join us for our children's art showcase!</p>
+            <p>🏥 Annual Health Check-ups scheduled for next week</p>
+            <p>🎭 Spring Concert rehearsals begin this Monday</p>
+            <p>📚 Book Fair coming soon - Save the date: March 15th</p>
+            <p>🎉 Parent-Teacher Meeting on the last Thursday of this month</p>
                 </div>
             </article>
         </section>
