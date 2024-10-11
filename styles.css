@@ -1,11 +1,12 @@
-/* Header Design */
+/* Main Design */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -16,6 +17,7 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
+/* Header Design */
 header {
     background-color: #ff9eaa;
     display: flex;
@@ -61,13 +63,15 @@ nav a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Body Design */
+
 section {
     padding: 30px;
     margin: 0px;
     margin: 20px 0;
-    background-color:azure;
+    background-color: azure;
     border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 article {
@@ -94,7 +98,7 @@ h2 {
 
 #welcome figcaption {
     font-family: 'Comic Sans MS', cursive;
-    background-color:#fff;
+    background-color: #fff;
     border-radius: 20px;
     margin-top: 10px;
     text-align: center;
@@ -103,8 +107,8 @@ h2 {
     color: #ff6b6b;
 }
 
-#schedule{
-    font-family: 'Comic Sans MS', cursive; 
+#schedule {
+    font-family: 'Comic Sans MS', cursive;
 }
 
 .schedule-table {
@@ -210,13 +214,16 @@ h2 {
     width: 100%;
 }
 
-#resources .links, #resources .announcements {
+#resources .links,
+#resources .announcements {
     width: 50%;
     padding: 10px;
     box-sizing: border-box;
 }
 
-footer{
+/* Footer Design */
+
+footer {
     text-align: center;
     padding: 20px;
     font-family: 'Comic Sans MS', cursive;
@@ -237,7 +244,7 @@ footer ul li {
     margin: 0 15px;
 }
 
-footer ul li a{
+footer ul li a {
     font-weight: bold;
     text-decoration: none;
 
@@ -248,21 +255,29 @@ footer ul li a i {
     font-size: 1.2rem;
 }
 
-@media (max-width: 600px){
-    body{
+/* Responsive Design */
+
+@media (max-width: 600px) {
+    body {
         font-size: 14px;
-    };
+    }
+
+    ;
 
 }
 
-@media (min-width: 601px) and (max-width: 900px){
-    body{
+@media (min-width: 601px) and (max-width: 900px) {
+    body {
         font-size: 16px;
-    };
+    }
+
+    ;
 }
 
-@media (min-width: 901px){
-    body{
+@media (min-width: 901px) {
+    body {
         font-size: 18px;
-    };
+    }
+
+    ;
 }
