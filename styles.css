@@ -90,6 +90,8 @@ h2 {
     border-radius: 20px;
 }
 
+/* Welcome Message Design */
+
 #welcome figure img {
     border-radius: 20px;
     max-width: 100%;
@@ -106,6 +108,8 @@ h2 {
     font-weight: 900;
     color: #ff6b6b;
 }
+
+/* Weekly Schedule Design */
 
 #schedule {
     font-family: 'Comic Sans MS', cursive;
@@ -133,6 +137,8 @@ h2 {
     background-color: orange;
 }
 
+/* Photo Gallery of Class Activities Design */
+
 #gallery {
     display: flex;
     overflow-x: auto;
@@ -146,6 +152,8 @@ h2 {
     margin-right: 10px;
     border: 2px solid black;
 }
+
+/* Information About the Teacher Design */
 
 #teacher {
     padding: 40px;
@@ -206,6 +214,8 @@ h2 {
     color: rgba(0, 0, 0, 0.748);
     text-decoration-line: underline;
 }
+
+/* Parent Resources or Announcements Design */
 
 #resources article {
     text-align: center;
